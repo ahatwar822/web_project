@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "neue-haas-grotesk-display", sans-serif;
     box-sizing: border-box;
 }
 
@@ -83,6 +84,139 @@ html,body{
 }
 
 #home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#smcircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45vw;
+    height: 45vw;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+#nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    width: 100%;
+    padding: 3vw 5vw;
+}
+
+#gcontainer {
+    font-family: "DS-Digital", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin: 0;
+    background-color: #f9f9f9;
+
+  }
+  
+  .color-grid {
+    display: flex;
+    gap: 2px;
+  }
+  
+  .color-box {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .color-box.light {
+    background-color: #f2f2f2;
+  }
+  
+  .color-box.lighter {
+    background-color: #dcdcdc;
+  }
+  
+  .color-box.medium-light {
+    background-color: #c0c0c0;
+  }
+  
+  .color-box.medium {
+    background-color: #a3a3a3;
+  }
+  
+  .color-box.dark {
+    background-color: #808080;
+  }
+  
+  .color-box.darker {
+    background-color: #505050;
+  }
+  
+  .text-row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+  }
+  
+  .text-row span {
+    font-size: 12px;
+  }
+  
+
+#btmnav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    width: 100%;
+    padding: 3vw 5vw;
+    bottom: 0;
+}
+
+#btmnav img{
+    width: 7vw;
+}   
+
+#centerimg{
+    width: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+}
+
+#centerimg h5{
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#centerimg #cimg{
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+#centerimg #cimg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ;
     width: 100%;
     height: 100%;
     object-fit: cover;
