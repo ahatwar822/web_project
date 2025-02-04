@@ -41,6 +41,23 @@ tl.to("#circle #bottom img", {
         ease: Power1
     }, "hello")
 
+    .to("#overlay>h1", {
+        bottom:"-50",
+        ease: Power1
+    }, "hello")
+
+    .to("#gola", {
+        top:"50%",
+        scale: 2,
+        duration: 1,
+        ease: Power1
+    }, "hello")
+
+    .to("#gola", {
+        opacity: 0,
+        ease: Power1
+    }, "hello2")
+
     .to("#smcircle", {
         scale: 0,
         ease: Power1
